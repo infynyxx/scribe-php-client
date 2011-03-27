@@ -1,3 +1,2 @@
- Scribe Client for PHP
- =====================
-
+Scribe Client for PHP
+=====================
