@@ -4,10 +4,10 @@
  *
  * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
  */
-include_once $GLOBALS['THRIFT_ROOT'].'/Thrift.php';
+#include_once $GLOBALS['THRIFT_ROOT'].'/Thrift.php';
 
-include_once $GLOBALS['THRIFT_ROOT'].'/packages/scribe/scribe_types.php';
-include_once $GLOBALS['THRIFT_ROOT'].'/packages/fb303/FacebookService.php';
+require $GLOBALS['THRIFT_ROOT'].'/packages/scribe/scribe_types.php';
+require $GLOBALS['THRIFT_ROOT'].'/packages/fb303/FacebookService.php';
 
 interface scribeIf extends FacebookServiceIf {
   public function Log($messages);
